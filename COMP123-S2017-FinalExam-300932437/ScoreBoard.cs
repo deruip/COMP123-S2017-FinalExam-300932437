@@ -4,7 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Name: Aron Ly
+ * Date: August 17, 2017
+ * StudentID: 300932437
+ * Description: ScoreBoard class for time/score fields and properties
+ * Version: 0.1 - Class created
+ */
 namespace COMP123_S2017_FinalExam_300932437
 {
     class ScoreBoard
@@ -73,12 +79,19 @@ namespace COMP123_S2017_FinalExam_300932437
                 this._timeTextBox = value;
             }
         }
-        // constructor
+        // constructors
         public ScoreBoard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextBox)
         {
             this.ScoreTextBox = scoreTextBox;
             this.TimeTextBox = timeTextBox;
             this.FinalScoreTextBox = finalScoreTextBox;
+        }
+        //methods
+        public void UpdateTime()
+        {
+            int temp = Convert.ToInt32(TimeTextBox.Text);
+            temp = temp - 1;
+            this.Time = temp;
         }
     }
 }

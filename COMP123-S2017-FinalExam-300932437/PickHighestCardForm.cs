@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name: Aron Ly
+ * Date: August 17, 2017
+ * StudentID: 300932437
+ * Description: 
+ * Version: 0.1
  */
 
 namespace COMP123_S2017_FinalExam_300932437

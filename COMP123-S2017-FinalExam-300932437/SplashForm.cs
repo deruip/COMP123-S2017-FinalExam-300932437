@@ -26,10 +26,9 @@ namespace COMP123_S2017_FinalExam_300932437
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timer1.Stop();
+            this.CardForm.Show();
             this.Hide();
-            PickHighestCardForm CardForm = new PickHighestCardForm();
-            CardForm.Show();
+            timer1.Enabled = false;
             
         }
     }
