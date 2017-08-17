@@ -146,6 +146,8 @@ namespace COMP123_S2017_FinalExam_300932437
             UserMessageTextBox.Text = "Pick the Highest Card";
             DealButton.Enabled = false;
             this.MaximumPoints = 100;
+            //SoundPlayer simpleSound = new SoundPlayer(@"C:\Documents\Semester 2\COMP123-S2017-FinalExam-300932437\COMP123-S2017-FinalExam-300932437\Resources\carddeal.wav");
+            //simpleSound.Play();
         }
 
         /// <summary>
@@ -314,6 +316,8 @@ namespace COMP123_S2017_FinalExam_300932437
             this.CurrentClickedCard = CardPictureBox;
             this.CardFlipTimer.Enabled = true;
             this._showUserMessage();
+            //SoundPlayer simpleSound = new SoundPlayer(@"C:\Documents\Semester 2\COMP123-S2017-FinalExam-300932437\COMP123-S2017-FinalExam-300932437\Resources\cardflip.wav");
+            //simpleSound.Play();
         }
 
         /// <summary>
