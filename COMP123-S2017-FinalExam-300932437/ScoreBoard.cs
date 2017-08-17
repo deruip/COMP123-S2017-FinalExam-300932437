@@ -13,7 +13,7 @@ using System.Windows.Forms;
  */
 namespace COMP123_S2017_FinalExam_300932437
 {
-    class ScoreBoard
+    public class ScoreBoard
     {
         // private instance variables
         TextBox _finalScoreTextBox;
@@ -42,6 +42,7 @@ namespace COMP123_S2017_FinalExam_300932437
             }
             set
             {
+                this._score = value;
                 this.ScoreTextBox.Text = Convert.ToString(_score);
                 this.FinalScoreTextBox.Text = Convert.ToString(_score);
             }
@@ -65,6 +66,7 @@ namespace COMP123_S2017_FinalExam_300932437
             }
             set
             {
+                this._time = value;
                 this.TimeTextBox.Text = Convert.ToString(_time);
             }
         }
@@ -92,6 +94,7 @@ namespace COMP123_S2017_FinalExam_300932437
             int temp = Convert.ToInt32(TimeTextBox.Text);
             temp = temp - 1;
             this.Time = temp;
+            this.TimeTextBox.Text = Convert.ToString(this.Time);
         }
     }
 }
