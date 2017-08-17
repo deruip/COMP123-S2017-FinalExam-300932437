@@ -82,6 +82,12 @@ namespace COMP123_S2017_FinalExam_300932437
             }
         }
         // constructors
+        /// <summary>
+        /// Main constructor for ScoreBoard class
+        /// </summary>
+        /// <param name="scoreTextBox"></param>
+        /// <param name="timeTextBox"></param>
+        /// <param name="finalScoreTextBox"></param>
         public ScoreBoard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextBox)
         {
             this.ScoreTextBox = scoreTextBox;
@@ -89,6 +95,9 @@ namespace COMP123_S2017_FinalExam_300932437
             this.FinalScoreTextBox = finalScoreTextBox;
         }
         //methods
+        /// <summary>
+        /// Method that handles the time countdown
+        /// </summary>
         public void UpdateTime()
         {
             int temp = Convert.ToInt32(TimeTextBox.Text);

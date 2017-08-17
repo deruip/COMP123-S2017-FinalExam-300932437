@@ -18,6 +18,7 @@ namespace COMP123_S2017_FinalExam_300932437
 {
     public partial class SplashForm : Form
     {
+        // public properties
         public PickHighestCardForm CardForm
         {
             get
@@ -25,16 +26,28 @@ namespace COMP123_S2017_FinalExam_300932437
                 return Program.CardForm;
             }
         }
+        //constructor
+        /// <summary>
+        /// Main constructor for SplashForm
+        /// </summary>
         public SplashForm()
         {
             InitializeComponent();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        /// <summary>
+        /// Event handler for tick 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SplashTimer_Tick(object sender, EventArgs e)
         {
+            //shows the main game program
             this.CardForm.Show();
+            //hides the splash screen
             this.Hide();
-            timer1.Enabled = false;
+            // disables timer
+            SplashTimer.Enabled = false;
             
         }
     }

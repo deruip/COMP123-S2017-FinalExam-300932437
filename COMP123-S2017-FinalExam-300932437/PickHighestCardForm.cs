@@ -14,8 +14,8 @@ using System.Windows.Forms;
  * Name: Aron Ly
  * Date: August 17, 2017
  * StudentID: 300932437
- * Description: 
- * Version: 0.1
+ * Description: Class that handles all the dealing and game mechanics
+ * Version: 0.2 - Implemented ScoreBoard class
  */
 
 namespace COMP123_S2017_FinalExam_300932437
