@@ -9,7 +9,7 @@ using System.Windows.Forms;
  * Date: August 17, 2017
  * StudentID: 300932437
  * Description: ScoreBoard class for time/score fields and properties
- * Version: 0.1 - Class created
+ * Version: 0.2 - UpdateTime method created
  */
 namespace COMP123_S2017_FinalExam_300932437
 {
